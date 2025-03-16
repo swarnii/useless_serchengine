@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Engine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="fullscreen-overlay" id="overlay">
+        <div class="bsod-content" id="bsod-content">
+            <div class="bsod-face">:(</div>
+            <div class="bsod-header">Your PC ran into a problem and needs to restart.</div>
+            <div class="bsod-text">
+                We're just collecting some error info, and then we'll restart for you.<br><br>
+                <span id="error-percentage">0% complete</span>
+            </div>
+            <div class="bsod-progress">
+                Stop code: CRITICAL_PROCESS_DIED<br>
+                For more information about this issue and possible fixes, visit<br>
+                https://www.windows.com/stopcode
+            </div>
+            <div class="qr-code"></div>
+        </div>
+        <div id="rickroll" style="display: none; width: 100%; height: 100%;">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="container">
+        <div class="search-container">
+            <h1>Google Engine</h1>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Enter a word to search...">
+                <button onclick="search()">Search</button>
+            </div>
+            <div id="searchCount" class="search-count">Searches made: 0</div>
+            <div id="result" class="result"></div>
+            <div id="timer" class="timer"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
